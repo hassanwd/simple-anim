@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-color: #000014;
+            overflow: hidden;
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+        }
+        .main img{
+            width: 70%;
+            height: 100%;
+        }
+        .aed{
+            position: absolute;
+        }
+        .aed-long{
+            top: 59%;
+            left: 41.5%;
+            animation: long 2s ease-in-out infinite;
+        }
+        @keyframes long {
+            0%{
+                top: 59%;
+            }
+            50%{
+                top: 52%;
+            }
+        }
+        .aed-wide{
+            top: 55%;
+            left: 69.5%;
+            animation: wide 2s ease-in-out infinite;
+        }
+        @keyframes wide {
+            0%{
+                top: 55%;
+            }
+            50%{
+                top: 62%;
+            }
+        }
+        .aed-white1 {
+            top: 15%;
+            left: 44.5%;
+            animation: white1 2s ease-in-out infinite;
+        }
+        @keyframes white1 {
+            0%{
+                left: 44.5%;
+            }
+            50%{
+                left: 43.5%;
+            }
+        }
+        .aed-white2 {
+            top: 18%;
+            left: 68.5%;
+            animation: white2 2s ease-in-out infinite;
+        }
+        @keyframes white2 {
+            0%{
+                left: 68.5%;
+            }
+            50%{
+                left: 69.5%;
+            }
+        }
+        .aed-center{
+            top: 8%;
+            left: 55%;
+            animation: center 5s ease-in-out infinite;
+        }
+        @keyframes center {
+            0%{
+                top: 8%;
+                transform: rotate(-10deg);
+            }
+            16.66%{
+                transform: rotate(10deg);
+            }
+            33.32%{
+                transform: rotate(-10deg);
+            }
+            50%{
+                transform: rotate(10deg);
+                top: 5%;
+            }
+            66.64%{
+                transform: rotate(-10deg);
+            }
+            83.3%{
+                transform: rotate(10deg);
+            }
+            100%{
+                transform: rotate(-10deg);
+                top: 8%;
+            }
+        }
+        .aed-sky{
+            top: 38%;
+            left: 46%;
+            overflow: hidden;
+            animation: sky 5s ease-in-out infinite;
+        }
+        @keyframes sky {
+            0%{
+                top: 38%;
+            }
+            50%{    
+                top: -14%;
+            }
+        }
+        .aed-sky img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-sky img:nth-child(2){
+            position: absolute;
+            left: 0;
+            top: -100%;
+            animation: sky_child 5s ease-in-out infinite;
+        }
+        @keyframes sky_child {
+            0%{
+                top: -100%;
+            }
+            50%{
+                top: 0%;
+            }
+        }
+        .aed-longline{
+            top: 28.5%;
+            left: 42.5%;
+            overflow: hidden;
+        }
+        .aed-longline img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-longline img:nth-child(2){
+            position: absolute;
+            left: 0;
+            top: 30%;
+            animation: aed-longline2 2s ease-in-out infinite;
+        }
+        @keyframes aed-longline2 {
+            0%{
+                top: 30%;
+            }
+            50%{
+                top: 5%;
+            }
+        }
+        .aed-longline1{
+            top: 28.5%;
+            left: 43.5%;
+            overflow: hidden;
+        }
+        .aed-longline1 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-longline1 img:nth-child(2){
+            position: absolute;
+            top: 5%;
+            left: 44.5%;
+            animation: aed-longline1-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-longline1-a {
+            0%{
+                top: 5%;
+            }
+            50%{
+                top: 28.5%;
+            }
+        }
+        .aed-longline2{
+            top: 30.5%;
+            left: 45.1%;
+            overflow: hidden;
+        }
+        .aed-longline2 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-longline2 img:nth-child(2){
+            position: absolute;
+            top: 28.5%;
+            left: 44.5%;
+            animation: aed-longline2-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-longline2-a {
+            0%{
+                top: 28.5%;
+            }
+            50%{
+                top: 5%;
+            }
+        }
+        .aed-longline3{
+            top: 24.3%;
+            left: 46.6%;
+            overflow: hidden;
+        }
+        .aed-longline3 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-longline3 img:nth-child(2){
+            position: absolute;
+            top: 5%;
+            left: 44.5%;
+            animation: aed-longline3-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-longline3-a {
+            0%{
+                top: 5%;
+            }
+            50%{
+                top: 28.5%;
+            }
+        }
+        .aed-longline4{
+            top: 19.5%;
+            left: 48.1%;
+            overflow: hidden;
+        }
+        .aed-longline4 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-longline4 img:nth-child(2){
+            position: absolute;
+            top: 28.5%;
+            left: 44.5%;
+            animation: aed-longline4-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-longline4-a {
+            0%{
+                top: 28.5%;
+            }
+            50%{
+                top: 2%;
+            }
+        }
+        .aed-wideline1{
+            top: 25%;
+            left: 66.5%;
+            overflow: hidden;
+        }
+        .aed-wideline1 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-wideline1 img:nth-child(2){
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            animation: aed-wideline1-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-wideline1-a {
+            0%{
+                top: 2%;
+            }
+            50%{
+                top: 28.5%;
+            }
+        }
+        .aed-wideline2{
+            top: 28%;
+            left: 68.5%;
+            overflow: hidden;
+        }
+        .aed-wideline2 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-wideline2 img:nth-child(2){
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            animation: aed-wideline2-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-wideline2-a {
+            0%{
+                top: 2%;
+            }
+            16.66%{
+                top: 2%;
+            }
+            66.66%{
+                top: 28.5%;
+            }
+        }
+        .aed-wideline3{
+            top: 34%;
+            left: 70.5%;
+            overflow: hidden;
+        }
+        .aed-wideline3 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-wideline3 img:nth-child(2){
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            animation: aed-wideline3-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-wideline3-a {
+            0%{
+                top: 2%;
+            }
+            33.32%{
+                top: 2%;
+            }
+            83.32%{
+                top: 28.5%;
+            }
+        }
+        .aed-wideline4{
+            top: 40%;
+            left: 72.5%;
+            overflow: hidden;
+        }
+        .aed-wideline4 img:nth-child(1){
+            opacity: 0;
+        }
+        .aed-wideline4 img:nth-child(2){
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            animation: aed-wideline4-a 2s ease-in-out infinite;
+        }
+        @keyframes aed-wideline4-a {
+            0%{
+                top: 2%;
+            }
+            50%{
+                top: 2%;
+            }
+            100%{
+                top: 28.5%;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="main">
+        <img src="./Downloads/Group 1738.png" alt="">
+        <div class="aed aed-white1">
+            <img src="./other white/Group 1752.png" alt="">
+        </div>
+        <div class="aed aed-white2">
+            <img src="./other white/Group 1753.png" alt="">
+        </div>
+        <div class="aed aed-sky">
+            <img src="./Body/Path 22654.png" alt="">
+            <img src="./Body/Path 22654.png" alt="">
+        </div>
+        <div class="aed aed-longline">
+            <img src="./Long 3/Group 1747.png" alt="">
+            <img src="./Long 3/Group 1747.png" alt="">
+        </div>
+        <div class="aed aed-longline1">
+            <img src="./Long 3/Group 1748.png" alt="">
+            <img src="./Long 3/Group 1748.png" alt="">
+        </div>
+        <div class="aed aed-longline2">
+            <img src="./Long 3/Group 1749.png" alt="">
+            <img src="./Long 3/Group 1749.png" alt="">
+        </div>
+        <div class="aed aed-longline3">
+            <img src="./Long 3/Group 1748.png" alt="">
+            <img src="./Long 3/Group 1748.png" alt="">
+        </div>
+        <div class="aed aed-longline4">
+            <img src="./Long 3/Group 1751.png" alt="">
+            <img src="./Long 3/Group 1751.png" alt="">
+        </div>
+        <div class="aed aed-wideline1">
+            <img src="./Long two/Group 1757.png" alt="">
+            <img src="./Long two/Group 1757.png" alt="">
+        </div>
+        <div class="aed aed-wideline2">
+            <img src="./Long two/Group 1754.png" alt="">
+            <img src="./Long two/Group 1754.png" alt="">
+        </div>
+        <div class="aed aed-wideline3">
+            <img src="./Long two/Group 1755.png" alt="">
+            <img src="./Long two/Group 1755.png" alt="">
+        </div>
+        <div class="aed aed-wideline4">
+            <img src="./Long two/Group 1758.png" alt="">
+            <img src="./Long two/Group 1758.png" alt="">
+        </div>
+        <div class="aed aed-center">
+            <img src="./Body/Group 1739.png" alt="">
+        </div>
+        <div class="aed aed-long">
+            <img src="./Downloads/Group 1736.png" alt="">
+        </div>
+        <div class="aed aed-wide">
+            <img src="./Downloads/Group 1737.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
